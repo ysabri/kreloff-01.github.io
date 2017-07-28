@@ -1,0 +1,221 @@
+
+<!--
+
+    The code is set up this way to facilitate as much re-use as possible in the about.html. Doing it this way ends up
+    being ~300 less lines of code. I don't know if this way is best practice or not (in fact, I'm almost certain
+    it's definitely not) but I'm not a front-end web dev I did my best alright.
+
+    How to use it:
+
+    <figure id="ellery_president"> <--put a unique id in the figure DOM. Reference this unique id when you load in the elements.
+    You can see an example load in line 15 of about.html:
+                        $("#ellery_pres").load("../pages/execs.html #ellery_president");
+      The left id is the id that holds the element mentioned                here ^
+      Load takes the figure with the id (2nd param in load function) and attaches it to the id on the left side.
+
+    <img src="../images/ellery.jpg" alt=""> <- replace this with the file path of the image for the executive
+                                                you can use the team-member.gif as the alt.
+
+    <figcaption>
+        <p class="team_name">Ellery Kreloff</p> <-- put exec name here
+        <p class="team_title">President</p> <-- put title here. If they have had two separate titles
+                                                over separate semesters (got promoted), make two separate figures entirely.
+                                                Examples are below.
+    </figcaption>
+    </figure> <-- close DOM elements
+
+    You might be asking...why did I set things up this way? Well because it actually ends up being way less code and also
+    doing anything more complicated requires fucky JavaScript and I don't hate myself that much. When I coded this site,
+    we needed to have it up as soon as possible, so these were the fanciest things I could do. Feel free to make fun of my
+    code all you want. I'm not a front-end dev: I do data science, OK? OK.
+
+    Ellery Kreloff 05/17/2017
+
+-->
+
+
+<!-- Ellery Blocs-->
+
+<figure id="ellery_pres"><img src="../images/execs/ellery.jpg" alt="">
+    <figcaption>
+        <p class="team_name">Ellery Kreloff</p>
+        <p class="team_title">President</p>
+    </figcaption>
+</figure>
+
+<figure id="ellery_vp"><img src="../images/execs/ellery.jpg" alt="">
+    <figcaption>
+        <p class="team_name">Ellery Kreloff</p>
+        <p class="team_title">Vice President</p>
+    </figcaption>
+</figure>
+
+<figure id="ellery_outreach"><img src="../images/execs/ellery.jpg" alt="">
+    <figcaption>
+        <p class="team_name">Ellery Kreloff</p>
+        <p class="team_title">Outreach Chair</p>
+    </figcaption>
+</figure>
+
+<!-- Jon Blocs-->
+
+<figure id="jon_vp"><img src="../images/execs/jon.jpg" alt="">
+    <figcaption>
+        <p class="team_name">Jon Erbe</p>
+        <p class="team_title">Vice President</p>
+    </figcaption>
+</figure>
+
+<figure id="jon_outreach"><img src="../images/execs/jon.jpg" alt="">
+    <figcaption>
+        <p class="team_name">Jon Erbe</p>
+        <p class="team_title">Outreach Chair</p>
+    </figcaption>
+</figure>
+
+    <!-- For when he becomes president: -->
+
+<figure id="jon_pres"><img src="../images/execs/jon.jpg" alt="">
+    <figcaption>
+        <p class="team_name">Jon Erbe</p>
+        <p class="team_title">President</p>
+    </figcaption>
+</figure>
+
+
+<!-- Richie Blocs -->
+
+<figure id="richie_sys"><img src="../images/execs/richie.jpg" alt="">
+    <figcaption>
+        <p class="team_name">Ruiqi Yin</p>
+        <p class="team_title">System Admin</p>
+    </figcaption>
+</figure>
+
+<!-- Arup Blocs -->
+
+<figure id="arup_vp"><img src="../images/execs/arup.jpg" alt="">
+    <figcaption>
+        <p class="team_name">Arup Arcalgud</p>
+        <p class="team_title">Vice President</p>
+    </figcaption>
+</figure>
+
+<!-- Matt Kramer Blocs -->
+
+<figure id="matt_outreach"><img src="../images/execs/matt.png" alt="">
+    <figcaption>
+        <p class="team_name">Matt Kramer</p>
+        <p class="team_title">Outreach Chair</p>
+    </figcaption>
+</figure>
+
+<!-- Yazeed Blocs -->
+
+<figure id="yazeed_tech"><img src="../images/execs/yazeed.jpg" alt="">
+    <figcaption>
+        <p class="team_name">Yazeed Sabri</p>
+        <p class="team_title">Tech Chair</p>
+    </figcaption>
+</figure>
+
+
+<!-- Jake Simonson Blocs -->
+
+<figure id="jake_soc"><img src="../images/execs/jake.jpg" alt="">
+    <figcaption>
+        <p class="team_name">Jake Simonson</p>
+        <p class="team_title">Social Chair</p>
+    </figcaption>
+</figure>
+
+
+<figure id="jake_proj"><img src="../images/execs/jake.jpg" alt="">
+    <figcaption>
+        <p class="team_name">Jake Simonson</p>
+        <p class="team_title">Project Chair</p>
+    </figcaption>
+</figure>
+
+<figure id="jake_pres"><img src="../images/execs/jake.jpg" alt="">
+    <figcaption>
+        <p class="team_name">Jake Simonson</p>
+        <p class="team_title">President</p>
+    </figcaption>
+</figure>
+
+<figure id="jake_vp"><img src="../images/execs/jake.jpg" alt="">
+    <figcaption>
+        <p class="team_name">Jake Simonson</p>
+        <p class="team_title">Vice President</p>
+    </figcaption>
+</figure>
+
+<!-- Kevin Bannerman Blocs -->
+
+<figure id="kevin_outreach"><img src="../images/execs/kevin.jpg" alt="">
+    <figcaption>
+        <p class="team_name">Kevin "CJ" Bannerman</p>
+        <p class="team_title">Outreach Chair</p>
+    </figcaption>
+</figure>
+
+<!-- Kyle Blocs -->
+
+<figure id="kyle_outreach"><img src="../images/execs/kyle.jpg" alt="">
+    <figcaption>
+        <p class="team_name">Kyle Malinowski</p>
+        <p class="team_title">Outreach Chair</p>
+    </figcaption>
+</figure>
+
+<!-- Paul Blocs -->
+
+<figure id="paul_tech"><img src="../images/execs/paul.jpg" alt="">
+    <figcaption>
+        <p class="team_name">Paul Kurians</p>
+        <p class="team_title">Tech Chair</p>
+    </figcaption>
+</figure>
+
+<!-- Aman Blocs -->
+
+<figure id="aman_finance"><img src="../images/execs/aman.jpg" alt="">
+    <figcaption>
+        <p class="team_name">Aman Lunia</p>
+        <p class="team_title">Finance Chair</p>
+    </figcaption>
+</figure>
+
+<!-- Mark Blocs -->
+
+<figure id="mark_tech"><img src="../images/execs/mark.png" alt="">
+    <figcaption>
+        <p class="team_name">Mark Wiemer</p>
+        <p class="team_title">Tech Chair</p>
+    </figcaption>
+</figure>
+
+<!-- ANCIENT HISTORY -->
+
+<figure id="marco_vp"><img src="../images/execs/marco.png" alt="">
+    <figcaption>
+        <p class="team_name">Marco Prouve</p>
+        <p class="team_title">Vice President and Co-founder</p>
+    </figcaption>
+</figure>
+
+<figure id="jack_pres"><img src="../images/execs/jack.png" alt="">
+    <figcaption>
+        <p class="team_name">Jack Staker</p>
+        <p class="team_title">President and Co-founder</p>
+    </figcaption>
+</figure>
+
+<figure id="jim_outreach"><img src="../images/execs/jim.png" alt="">
+    <figcaption>
+        <p class="team_name">Jim McGlade</p>
+        <p class="team_title">Outreach Chair and Co-founder</Co-founder></p>
+    </figcaption>
+</figure>
+

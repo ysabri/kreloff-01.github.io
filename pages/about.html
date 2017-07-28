@@ -1,0 +1,225 @@
+<!--As I said before: the code is set up this way to facilitate as much re-use as possible in the about.html. Doing it this way ends up
+    being ~300 less lines of code. I don't know if this way is best practice or not (in fact, I'm almost certain
+    it's definitely not) but I'm not a front-end web dev I did my best alright.
+
+    Feel free to change/restructure someday if you can make it less awful.
+
+    Ellery Kreloff 05/19/2017
+-->
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <title>UW-Madison Software Dev Club</title>
+
+    <link rel="stylesheet" type="text/css" href="../css/main.css">
+    <link rel="stylesheet" type="text/css" href="../css/bootstrap.css">
+    <link rel="stylesheet" type="text/css" href="../css/bootstrap.min.css">
+    <link rel="stylesheet" type="text/css" href="../css/main.css">
+    <link rel="stylesheet" type="text/css" href="../css/framework.css">
+    <!-- jQuery -->
+    <script src="../js/jquery.js"></script>
+    <!-- Bootstrap Core JavaScript -->
+    <script src="../js/bootstrap.min.js"></script>
+    <link rel="stylesheet" href="../js/jquery-ui-1.12.1/jquery-ui.css">
+    <script src="../js/jquery-ui-1.12.1/jquery-ui.js"></script>
+    <link rel="stylesheet" type="text/css" href="../css/about-us.css">
+    <script src="../js/about-us.js"></script>
+
+</head>
+
+<script>
+    $(function(){
+        $( "#tabs" ).tabs();
+        $("#ellery_pres").load("../pages/execs.html #ellery_pres");
+        $("#ellery_pres_1").load("../pages/execs.html #ellery_pres");
+        $("#ellery_pres_2").load("../pages/execs.html #ellery_pres");
+        $("#ellery_vp").load("../pages/execs.html #ellery_vp");
+        $("#ellery_outreach").load("../pages/execs.html #ellery_outreach");
+        $("#jon_outreach").load("../pages/execs.html #jon_outreach");
+        $("#jon_outreach_1").load("../pages/execs.html #jon_outreach");
+        $("#jon_outreach_2").load("../pages/execs.html #jon_outreach");
+        $("#jon_vp").load("../pages/execs.html #jon_vp");
+        $("#richie_sys").load("../pages/execs.html #richie_sys");
+        $("#richie_sys_1").load("../pages/execs.html #richie_sys");
+        $("#richie_sys_2").load("../pages/execs.html #richie_sys");
+        $("#matt_outreach").load("../pages/execs.html #matt_outreach");
+        $("#jake_soc").load("../pages/execs.html #jake_soc");
+        $("#jake_pres").load("../pages/execs.html #jake_pres");
+        $("#jake_proj").load("../pages/execs.html #jake_proj");
+        $("#kevin_outreach").load("../pages/execs.html #kevin_outreach");
+        $("#kevin_outreach_1").load("../pages/execs.html #kevin_outreach");
+        $("#kyle_outreach").load("../pages/execs.html #kyle_outreach");
+        $("#paul_tech").load("../pages/execs.html #paul_tech");
+        $("#aman_finance").load("../pages/execs.html #aman_finance");
+        $("#aman_finance_1").load("../pages/execs.html #aman_finance");
+        $("#mark_tech").load("../pages/execs.html #mark_tech");
+        $("#mark_tech_1").load("../pages/execs.html #mark_tech");
+        $("#arup_vp").load("../pages/execs.html #arup_vp");
+        $("#arup_vp_1").load("../pages/execs.html #arup_vp");
+        $("#yazeed_tech").load("../pages/execs.html #yazeed_tech");
+        $("#marco_vp").load("../pages/execs.html #marco_vp");
+        $("#marco_vp_1").load("../pages/execs.html #marco_vp");
+        $("#jack_pres").load("../pages/execs.html #jack_pres");
+        $("#jack_pres_1").load("../pages/execs.html #jack_pres");
+        $("#jim_outreach").load("../pages/execs.html #jim_outreach");
+        $("#jim_outreach_1").load("../pages/execs.html #jim_outreach");
+    });
+</script>
+
+<body>
+<!-- Navigation -->
+    <nav class="navbar-inverse navbar-fixed-top" role="navigation">
+        <div class="container" id="navbar">
+            <!-- Brand and toggle get grouped for better mobile display -->
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+                    <span class="sr-only">Toggle navigation</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                <a class="navbar-brand" href="../index.html">UW-Madison Software Development Club</a>
+            </div>
+            <!-- Collect the nav links, forms, and other content for toggling -->
+            <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+                <ul class="nav navbar-nav">
+                    <li>
+                        <a href="/pages/about.html">About</a>
+                    </li>
+                    <li>
+                        <a href="/pages/sponsorship.html">Sponsorship</a>
+                    </li>
+                    <li>
+                        <a href="/pages/faq.html">FAQ</a>
+                    </li>
+                </ul>
+            </div>
+            <!-- /.navbar-collapse -->
+        </div>
+        <!-- /.container -->
+    </nav>
+    <!-- <div class="wrapper row2"> -->
+            <img src="../images/group_photos/serious_group.jpg" id="group_photo" class="full_width">
+            <div id="about-us" class="clear">
+                <div id="about-sec" class="clear">
+                    <div class="big_font"><br>
+                     <h2>Our Mission</h2>
+                     <p class="text-custom">As an organization the software development club focuses on fostering
+                         practical development skills in students who are interested in computer
+                         science. We strive to engage our members in innovative projects, encouraging
+                         teamwork and synergy. In doing so we hope to help our members better understand
+                         the process of development and concepts taught in class as well as exposing them
+                         to topics not covered by the curriculum.</p><br>
+                     <h2>Professional Development</h2>
+                     <p class="text-custom" style="text-align:left;">The Software Development Club offers its members a multitude of professional development
+                        opportunities: </p>
+                         <ul class="smol_font" id="professional_dev">
+                            <li>Semesterly resum&eacute; workshops help our students bring out their strengths to employers</li>
+                            <li>Consistent attendence and group project work is a wonderful way for students to network with like-minded, driven individuals</li>
+                            <li>Weekly tech talks familiarize our students with many vital industry-standard tools such as:</li>
+                        </ul><br>
+                        <ul id="professional_logos">
+                            <li id="git" class="one_quarter"><img src="../images/industry_tools/gitlogo.png"></li>
+                            <li class="one_quarter"><img src="../images/industry_tools/slacklogo.png"></li>
+                            <div id="second_row">
+                                <li id="scrum" class="one_quarter"><img src="../images/industry_tools/scrum.png"></li>
+                                <li class="one_quarter"><img src="../images/industry_tools/awslogo.jpg"></li>
+                            </div>
+                        </ul><br>
+
+                     <h2>Company Outreach</h2>
+                     <p class="text-custom">From Fortune 500 companies to the humble startup, all have one thing in common: a desire for
+                        talented employees. Companies of all sizes visit our club every semester, bringing distinguished
+                        engineers to give tech talks, panels of employees to answer questions about post-grad life, or
+                        human resources representatives to give interview and resum&eacute; advice. These meetings allow
+                        club members to interact with recruiters directly, expanding their ever-growing network.</p><br>
+
+                     <h2>Social Events</h2>
+                     <p class="text-custom">Every semester the SDC offers tons of fun
+                     activities for our members. Some events include our welcome-back bonfire, bowling at the Sett,
+                     video game tournaments, nerd trivia night, the annual CSS contest, and our 12-hour mini-hackathon
+                     (free food and shirts provided)! </p><br>
+
+
+                    </div>
+                </div>
+
+                <div class="" id="team">
+                    <h2>Executive Board</h2>
+                    <div>
+                        <ul class="tabs custom-width smol_font" id="tab_list">
+                            <li class="tab-link current" data-tab="fall_17">Fall 2017</li>
+                            <li class="tab-link" data-tab="spring_17">Spring 2017</li>
+                            <li class="tab-link" data-tab="fall_16">Fall 2016</li>
+                            <li class="tab-link" data-tab="spring_16">Spring 2016</li>
+                            <li class="tab-link" data-tab="fall_15">Fall 2015</li>
+                            <li class="tab-link" data-tab="spring_15">Spring 2015</a></li>
+                        </ul>
+                        <div class="tab-content current custom-width" id="fall_17">
+                            <ul class="overflow_height">
+                                <li class="blocks" id="ellery_pres"></li>
+                                <li class="blocks" id="jon_vp"></li>
+                                <li class="blocks" id="richie_sys"></li>
+                                <li class="blocks" id="matt_outreach"></li>
+                                <li class="blocks" id="kyle_outreach"></li>
+                                <li class="blocks" id="mark_tech"></li>
+                                <li class="blocks" id="yazeed_tech"></li>
+                            </ul>
+                        </div>
+                        <div class="tab-content custom-width" id="spring_17">
+                            <ul class="overflow_height">
+                                <li class="blocks" id="ellery_pres_1"></li>
+                                <li class="blocks" id="arup_vp"></li>
+                                <li class="blocks" id="richie_sys_1"></li>
+                                <li class="blocks" id="mark_tech_1"></li>
+                                <li class="blocks" id="kevin_outreach"></li>
+                                <li class="blocks" id="jon_outreach"></li>
+                                <li class="blocks" id="paul_tech"></li>
+                                <li class="blocks" id="jake_soc"></li>
+                                <li class="blocks" id="aman_finance"></li>
+                            </ul>
+                        </div>
+                        <div class="tab-content custom-width" id="fall_16">
+                            <ul class="overflow_height">
+                                <li class="blocks" id="ellery_pres_2"></li>
+                                <li class="blocks" id="arup_vp_1"></li>
+                                <li class="blocks" id="richie_sys_2"></li>
+                                <li class="blocks" id="kevin_outreach_1"></li>
+                                <li class="blocks" id="jon_outreach_1"></li>
+                                <li class="blocks" id="aman_finance_1"></li>
+                            </ul>
+                        </div>
+                        <div class="tab-content custom-width" id="spring_16">
+                            <ul class="overflow_height">
+                                <li class="blocks" id="jake_pres"></li>
+                                <li class="blocks" id="ellery_vp"></li>
+                                <li class="blocks" id="jon_outreach_2"></li>
+                            </ul>
+                        </div>
+                        <div class="tab-content custom-width" id="fall_15">
+                            <ul class="overflow_height">
+                                <li class="blocks" id="jack_pres"></li>
+                                <li class="blocks" id="marco_vp"></li>
+                                <li class="blocks" id="jim_outreach"></li>
+                                <li class="blocks" id="jake_proj"></li>
+                                <li class="blocks" id="ellery_outreach"></li>
+                            </ul>
+                        </div>
+                        <div class="tab-content custom-width" id="spring_15">
+                            <ul class="overflow_height">
+                                <li class="blocks" id="jack_pres_1"></li>
+                                <li class="blocks" id="marco_vp_1"></li>
+                                <li class="blocks" id="jim_outreach_1"></li>
+                            </ul>
+                        </div>
+                    </div>
+
+                </div>
+        </div>
+</body>
+
+
+<!-- </div> -->

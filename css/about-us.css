@@ -1,0 +1,88 @@
+/*
+HTML 5 Template Name: 
+File: About Us - 12 CSS
+Author: OS Templates
+Author URI: http://www.os-templates.com/
+Licence: <a href="http://www.os-templates.com/template-terms">Website Template Licence</a>
+*/
+
+
+#about-us {display:block; line-height:1.6em;}
+
+#photos{}
+#group_photo {padding-top: 2.5%;}
+#about-sec{margin: auto; width:78%;}
+#about-us #about-intro div{}
+#about-us #about-intro div blockquote{position:relative; margin:0; padding:0;}
+#about-us #about-intro div blockquote p{margin:0; padding:0 0 0 3%; font-size:22px; font-style:italic; text-align:justify; line-height:1.6em;}
+#about-us #about-intro div blockquote p span{position:absolute; top:0; left:0; font-size:120px; line-height:.8em;}
+#about-us #about-intro .imgr{background-color:#FFFFFF; margin:0;}
+
+/*#tab_list{height:6.5%;} */
+
+#about-us #team{margin-bottom:0; height: 80%; width: 78%; margin:auto;}
+#about-us #team ul{margin:auto; list-style:none;}
+/*#about-us #team ul li{margin-bottom:30px;}*/
+#about-us #team ul li figure{text-align:center;}
+#about-us #team ul li figure img{padding-bottom:1%;}
+#about-us #team ul li figure figcaption{}
+#about-us #team ul li figure figcaption p{margin:0; padding:0;}
+#about-us #team ul li figure figcaption p:first-child{}
+#about-us #team ul li figure figcaption .team_name{font-weight:bold; font-size:1.25em;}
+#about-us #team ul li figure figcaption .team_title{margin:0; font-size:1.1em; line-height:normal;}
+
+#professional_dev{width:80%; margin:auto; overflow:auto;}
+#professional_logos{margin:auto; overflow:auto; padding-left:5%;}
+
+/*#fall_17 {padding:1.25%; overflow:auto; width:100%;}
+#spring_17 {padding:1.25%; overflow:auto; width:100%;}
+#fall_16 {padding:1.25%; overflow:auto; width:100%;} */
+
+.big_font {font-size: 1.2em;}
+.smol_font {font-size: 1.1em;}
+.full_width {width:100%;}
+.overflow_height {overflow:hidden; padding:1.5% 0% 0% 0%;}
+.img-resize {width:225px;}
+
+.text-custom{width:90%; margin: auto; text-align: center; font-size: 1.1em;}
+
+ul.tabs{margin: 0px; padding: 0px; list-style: none;}
+ul.tabs li{background: none; color: #222; display: inline-block; padding: 10px 15px; cursor: pointer;}
+ul.tabs li.current{background: #ededed; color: #222;}
+
+.tab-content{display: none; background: #ededed;}
+
+.tab-content.current{display: inherit;}
+
+.blocks{display:inline-block; margin:auto; padding:0% 1.5% 1.5% 1.5%;}
+
+.custom-width{margin:auto;}
+
+#second_row {display:inline-block;}
+
+/* For different screen sizes, fucking inline-block BS */
+
+ /* for screens 850px and over */
+@media screen and (max-width: 765px) and (min-width: 400px) {
+    .custom-width {width: 310px;}
+    .blocks {padding-bottom:4%;}
+    #professional_logos {width:280px;}
+}
+
+@media screen and (max-width: 1150px) and (min-width: 765px) {
+    .custom-width {width: 643px;}
+}
+
+@media screen and (max-width: 1350px) and (min-width: 765px) {
+    #professional_logos {width:550px;}
+}
+
+@media screen and (max-width: 1765px) and (min-width: 1150px) {
+    .custom-width {width: 998px;}
+}
+
+@media screen and (max-width: 2285px) and (min-width: 1765px) {
+    .custom-width {width: 1377px;}
+}
+
+/* if they have a computer screen bigger than that they deserve to break the site */
